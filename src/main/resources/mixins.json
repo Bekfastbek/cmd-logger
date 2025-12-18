@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.bekfastbek.cmdlogger.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CmdLoggerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
