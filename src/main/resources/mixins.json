@@ -3,7 +3,8 @@
   "package": "com.bekfastbek.cmdlogger.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "CmdLoggerMixin"
+    "CmdLoggerMixin",
+    "ChatMessageMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,9 +1,9 @@
 package com.bekfastbek.cmdlogger.mixin;
 
+import com.bekfastbek.cmdlogger.FileLogger;
 import com.mojang.brigadier.ParseResults;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
-import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -16,7 +16,7 @@ public class CmdLoggerMixin {
         try {
             CommandSourceStack source = results.getContext().getSource();
             String name = source.getTextName();
-            LoggerFactory.getLogger("CmdLogger").info("[Logging] [{}] /{}", name, command);
+            FileLogger.logCommand(name, command);
         } catch (Exception e) {
             e.printStackTrace();
         }
