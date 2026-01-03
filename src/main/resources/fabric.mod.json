@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "events_logger",
+	"version": "${version}",
+	"name": "events_logger",
+	"description": "Logs events nicely in separate text files including read only commands not logged by vanilla server",
+	"authors": [
+		"bekfastbek"
+	],
+	"contact": {
+		"sources": "https://github.com/Bekfastbek/events_logger"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bekfastbek.events_logger.events_logger"
+		],
+		"client": [
+			"com.bekfastbek.events_logger.events_loggerClient"
+		]
+	},
+	"mixins": [
+    "mixins.json"
+  	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

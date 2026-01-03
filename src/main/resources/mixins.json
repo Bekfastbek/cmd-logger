@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.bekfastbek.events_logger.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EventsLoggerMixin",
+    "ChatMessageMixin",
+    "PlayerDeathMixin",
+    "AdvancementMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
